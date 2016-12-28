@@ -18,7 +18,7 @@
 
 <!-- Header
 ================================================== -->
-<div id="header-container" data-background="images/about-01-parallax.jpg" data-color="#303133" data-color-opacity="0.4">
+<div id="header-container" data-background="<?php echo BASEDIR_FR; ?>/images/about-01-parallax.jpg" data-color="#303133" data-color-opacity="0.4">
 	
 <?php
 	include('inc/header.php');
