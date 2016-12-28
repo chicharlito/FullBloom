@@ -1,32 +1,8 @@
 <!DOCTYPE html>
 <!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
 <head>
-    
-        <!-- ================= Favicon ================== -->
-        <!-- Standard -->
-        <link rel="shortcut icon" type="images/png" href="images/full_1.png" />
-    
-<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><![endif]-->
-
-<!-- Basic Page Needs
-================================================== -->
-<meta charset="utf-8">
-<title>FullBloom</title>
-<meta name="description" content="Solution de Platform As A Service." />
-
-<!-- Mobile Specific Metas
-================================================== -->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-<!-- CSS
-================================================== -->
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/colors/blue.css" id="colors">
-
-<!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
+	<title>FullBloom</title>
+	<?php require_once 'inc/head.html';?>
 </head>
 
 <body>
@@ -42,77 +18,14 @@
 
 <!-- Header
 ================================================== -->
+
 <div id="header-container" data-background="images/service-02-parallax.jpg" data-color="#303133" data-color-opacity="0.4">
+	
+<?php
+	include('inc/header.php');
+?>
 
-	<div id="main-header">
-	<div class="container">
-
-		<div class="row">
-			<div class="header">
-
-				<div class="col-md-2 col-sm-12">
-					<div id="logo" class="margin-top-25">
-						<a href="index.html"><img src="images/FullBloom.png" alt=""></a>
-					</div>
-				</div>
-
-				<!-- Search Form -->
-				<div class="search-container">
-			      	<form action="#" method="get">
-			      		<input type="text" name="s" id="s" onblur="if(this.value=='')this.value='';" onfocus="if(this.value=='')this.value='';" value="" />
-			      	</form>
-			      	<div class="close-search"><a class="sl sl-icon-close" href="#"></a></div>
-				</div>
-
-					<div class="col-md-10 col-sm-12">
-
-					<!-- Mobile Navigation -->
-					<div class="menu-responsive">
-						<i class="fa fa-reorder menu-trigger"></i>
-						<i class="fa fa-search search-trigger"></i>
-						<a href="http://admin.mypaas.io/"><i class="ln ln-icon-Lock-User"></i></a>
-				      	<form action="#" method="get" class="responsive-search">
-				      		<input type="text" onblur="if(this.value=='')this.value='';" onfocus="if(this.value=='')this.value='';" value="" />
-				      	</form>
-					</div>
-					
-					<!-- Main Navigation -->
-					<nav id="navigation">
-
-						<ul class="menu alt2" id="responsive">
-
-							<li class="dropdown">
-								<a href="index.html">ACCUEIL</a>
-							</li>
-
-							<li>
-								<a href="services.html" class="current">SOLUTION</a>
-				            </li>
-
-							<li>
-								<a href="paas.html">SERVICES CONNEXES</a>
-							</li>
-
-							<li>
-								<a href="contact.html">CONTACT</a>
-                            </li>
-
-
-							<!-- Search Icon-->		
-							<li class="search"><a href="#"><i class="sl sl-icon-magnifier"></i></a></li>
-                            <!-- Cart Icon -->
-							<li class="cart-icon"><a href="#"><i class="ln ln-icon-Lock-User"></i></a></li>
-
-						</ul>
-					</nav>
-
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-
-	</div>
-	</div>
+</div>
 
 <!-- Titlebar
 ================================================== -->

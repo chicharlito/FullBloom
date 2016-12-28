@@ -1,32 +1,8 @@
 <!DOCTYPE html>
 <!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
 <head>
-    
-    <!-- ================= Favicon ================== -->
-        <!-- Standard -->
-        <link rel="shortcut icon" type="../images/png" href="../images/full_1.png" />
-    
-<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><![endif]-->
-
-<!-- Basic Page Needs
-================================================== -->
-<meta charset="utf-8">
-<title>FullBloom</title>
-<meta name="description" content="Solution de Platform As A Service." />
-
-<!-- Mobile Specific Metas
-================================================== -->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-<!-- CSS
-================================================== -->
-<link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/colors/blue.css" id="colors">
-
-<!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
+	<title>FullBloom</title>
+	<?php require_once 'inc/head.html';?>
 </head>
 
 <body>
@@ -42,87 +18,17 @@
 
 <!-- Header
 ================================================== -->
-<div id="main-header" class="fullscreen-nav">
-	<div class="container">
+<?php
+	include('inc/header.php');
+?>
 
-		<div class="row">
-			<div class="header">
-
-				<div class="col-md-2 col-sm-4">
-					<div id="logo" class="margin-top-25">
-						<a href="index.html"><img src="../images/FullBloom.png" alt=""></a>
-					</div>
-				</div>
-
-				<!-- Search Form -->
-				<div class="search-container">
-			      	<form action="#" method="get">
-			      		<input type="text" name="s" id="s" onblur="if(this.value=='')this.value='';" onfocus="if(this.value=='')this.value='';" value="" />
-			      	</form>
-			      	<div class="close-search"><a class="sl sl-icon-close" href="#"></a></div>
-				</div>
-
-					<div class="col-md-10 col-sm-12">
-
-					<!-- Mobile Navigation -->
-					<div class="menu-responsive">
-						<i class="fa fa-reorder menu-trigger"></i>
-						<i class="fa fa-search search-trigger"></i>
-						<a href="http://admin.mypaas.io/"><i class="ln ln-icon-Lock-User"></i></a>
-				      	<form action="#" method="get" class="responsive-search">
-				      		<input type="text" onblur="if(this.value=='')this.value='';" onfocus="if(this.value=='')this.value='';" value="" />
-				      	</form>
-					</div>
-					
-					<!-- Main Navigation -->
-					<nav id="navigation">
-
-						<ul class="menu alt2" id="responsive">
-
-							<li class="dropdown">
-								<a href="index.html" class="current">ACCUEIL</a>
-							</li>
-
-							<li>
-								<a href="services.html">SOLUTION</a>
-				            </li>
-
-							<li>
-								<a href="paas.html">SERVICES CONNEXES</a>
-							</li>
-
-							<li>
-								<a href="contact.html">CONTACT</a>
-                            </li>
-
-
-							<!-- Search Icon-->		
-							<li class="search"><a href="#"><i class="sl sl-icon-magnifier"></i></a></li>
-                            <li class="cart-icon"><a href="#"><i class="ln ln-icon-Lock-User"></i></a></li>
-                            
-                            <li>
-								<a href="../index.html">FR</a>
-                            </li>
-                            <li>
-								<a href="#">EN</a>
-                            </li>
-
-						</ul>
-					</nav>
-
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-
-	</div>
-	</div>
+</div>
 
 
 <!-- Video Background -->
 <div class="fullscreen video background" data-color="#000000" data-color-opacity="0.3">
 
-	<video poster="../images/fibre-image-slider-home.jpg" id="bgvid" loop autoplay muted>
+	<video poster="images/fibre-image-slider-home.jpg" id="bgvid" loop autoplay muted>
 		<source src="" type="">
 		<source src="" type="">
 	</video>
@@ -138,7 +44,7 @@
 <!-- Video Background / End  -->
     
     <!-- Parallax Counters -->
-<div class="fullscreen not-fullscreen background parallax margin-top-0" data-background="../images/contact-parallax-02.jpg" data-img-width="1677" data-img-height="1119" data-diff="300" data-color="#303133" data-color-opacity="0.9">
+<div class="fullscreen not-fullscreen background parallax margin-top-0" data-background="images/contact-parallax-02.jpg" data-img-width="1677" data-img-height="1119" data-diff="300" data-color="#303133" data-color-opacity="0.9">
 
 	<!-- Counters -->
 	<div id="counters">
@@ -268,6 +174,36 @@
 
 </div>
 <!-- Wide Parallax Infobox -/ End -->
+    
+       <!-- Logo Carousel -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h3 class="headline centered with-border margin-top-70 margin-bottom-30">Ils nous font<span class="color"> confiance</span>
+            
+            
+            
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			
+			<!-- Carousel -->
+			<div class="logo-carousel-alt">
+			    <div class="item"><img src="" alt="" /></div>
+			    <div class="item"><img src="" alt="" /></div>
+			    <div class="item"><img src="" alt="" /></div>
+                <div class="item"><img src="" alt="" /></div>
+			    <div class="item"><img src="" alt="" /></div>
+			    <div class="item"><img src="" alt="" /></div>
+                <div class="item"><img src="" alt="" /></div>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- Logo Carousel / End -->
 
 
 
@@ -277,6 +213,8 @@
 		<div class="col-md-12"><h2 class="about-me-title margin-top-70 margin-bottom-50">PARTENAIRES</h2></div>
 	</div>
 </div>
+    
+    
 
 
 <!-- Team Members Carousel -->
@@ -289,7 +227,7 @@
 			<!-- Item -->
 			<div class="item">
 				<a>
-					<img src="../images/equi.jpg" alt="">
+					<img src="images/equi.jpg" alt="">
 					<div class="overlay">
 						<div class="overlay-content">
 							<h4>EQUINIX</h4>
@@ -302,7 +240,7 @@
 			<!-- Item -->
 			<div class="item">
 				<a>
-					<img src="../images/nesti.jpg" alt="">
+					<img src="images/nesti.jpg" alt="">
 					<div class="overlay">
 						<div class="overlay-content">
 							<h4>NESTINCLOUD</h4>
@@ -316,7 +254,7 @@
 			<!-- Item -->
 			<div class="item">
 				<a>
-					<img src="../images/ade.jpg" alt="">
+					<img src="images/ade.jpg" alt="">
 					<div class="overlay">
 						<div class="overlay-content">
 							<h4>ADELIUS Managed Services</h4>
@@ -350,13 +288,13 @@
 			
 			<!-- Carousel -->
 			<div class="logo-carousel-alt">
-			    <div class="item"><img src="../images/php.png" alt="" /></div>
-			    <div class="item"><img src="../images/nodeJS.png" alt="" /></div>
-			    <div class="item"><img src="../images/play.png" alt="" /></div>
-                <div class="item"><img src="../images/scala.png" alt="" /></div>
-			    <div class="item"><img src="../images/MySQL.png" alt="" /></div>
-			    <div class="item"><img src="../images/Tomcat.png" alt="" /></div>
-                <div class="item"><img src="../images/no.png" alt="" /></div>
+			    <div class="item"><img src="images/php.png" alt="" /></div>
+			    <div class="item"><img src="images/nodeJS.png" alt="" /></div>
+			    <div class="item"><img src="images/play.png" alt="" /></div>
+                <div class="item"><img src="images/scala.png" alt="" /></div>
+			    <div class="item"><img src="images/MySQL.png" alt="" /></div>
+			    <div class="item"><img src="images/Tomcat.png" alt="" /></div>
+                <div class="item"><a href="contact.html"><img src="images/no.png" alt="" /></a></div>
 			</div>
 
 		</div>
@@ -410,31 +348,31 @@
 <div id="backtotop"><a href="#"></a></div>
 
 
-<!-- ../scripts
+<!-- Scripts
 ================================================== -->
-<script type="text/javascript" src="../scripts/jquery-2.2.0.min.js"></script>
-<script type="text/javascript" src="../scripts/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="../scripts/owl.carousel.min.js"></script>
-<script type="text/javascript" src="../scripts/counterup.min.js"></script>
-<script type="text/javascript" src="../scripts/waypoints.min.js"></script>
-<script type="text/javascript" src="../scripts/jquery.themepunch.tools.min.js"></script>
-<script type="text/javascript" src="../scripts/jquery.themepunch.revolution.min.js"></script>
-<script type="text/javascript" src="../scripts/jquery.isotope.min.js"></script>
-<script type="text/javascript" src="../scripts/jquery.magnific-popup.min.js"></script>
-<script type="text/javascript" src="../scripts/jquery.sticky-kit.min.js"></script>
-<script type="text/javascript" src="../scripts/jquery.twentytwenty.js"></script>
-<script type="text/javascript" src="../scripts/jquery.event.move.js"></script>
-<script type="text/javascript" src="../scripts/jquery.photogrid.js"></script>
-<script type="text/javascript" src="../scripts/jquery.tooltips.min.js"></script>
-<script type="text/javascript" src="../scripts/jquery.pricefilter.js"></script>
-<script type="text/javascript" src="../scripts/jquery.stacktable.js"></script>
-<script type="text/javascript" src="../scripts/jquery.contact-form.js"></script>
-<script type="text/javascript" src="../scripts/jquery.jpanelmenu.js"></script>
-<script type="text/javascript" src="../scripts/headroom.min.js"></script>
-<script type="text/javascript" src="../scripts/modernizr.custom.js"></script>
-<script type="text/javascript" src="../scripts/puregrid.js"></script>
-<script type="text/javascript" src="../scripts/flexibility.js"></script>
-<script type="text/javascript" src="../scripts/custom.js"></script>
+<script type="text/javascript" src="scripts/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="scripts/owl.carousel.min.js"></script>
+<script type="text/javascript" src="scripts/counterup.min.js"></script>
+<script type="text/javascript" src="scripts/waypoints.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.sticky-kit.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.twentytwenty.js"></script>
+<script type="text/javascript" src="scripts/jquery.event.move.js"></script>
+<script type="text/javascript" src="scripts/jquery.photogrid.js"></script>
+<script type="text/javascript" src="scripts/jquery.tooltips.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.pricefilter.js"></script>
+<script type="text/javascript" src="scripts/jquery.stacktable.js"></script>
+<script type="text/javascript" src="scripts/jquery.contact-form.js"></script>
+<script type="text/javascript" src="scripts/jquery.jpanelmenu.js"></script>
+<script type="text/javascript" src="scripts/headroom.min.js"></script>
+<script type="text/javascript" src="scripts/modernizr.custom.js"></script>
+<script type="text/javascript" src="scripts/puregrid.js"></script>
+<script type="text/javascript" src="scripts/flexibility.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
 <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
 
 <div class="ct-fixed-contact">
@@ -445,7 +383,7 @@
 				"element": "SkypeButton_Call_dan_aisenberg_1",
 				"participants": ["dan_aisenberg"],
 				"imageColor":"white",
-				"../imagesize": 32
+				"imageSize": 32
 			});
 		</script>
 	</div>
