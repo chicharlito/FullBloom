@@ -2,7 +2,7 @@
 <!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
 <head>
 	<title>FullBloom</title>
-	<?php require_once 'inc/head.html';?>
+	<?php include '../inc/head.php';?>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 <!-- Header
 ================================================== -->
 <?php
-	include('inc/header.php');
+	include(BASEDIR_FR.'/inc/header.php');
 ?>
 
 </div>

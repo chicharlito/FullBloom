@@ -2,7 +2,7 @@
 <!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
 <head>
 	<title>FullBloom</title>
-	<?php require_once 'inc/head.html';?>
+	<?php include(BASEDIR_FR.'/inc/head.php');?>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 <!-- Header
 ================================================== -->
 <?php
-	include('inc/header.php');
+	include(BASEDIR_FR.'/inc/header.php');
 ?>
 
 </div>
@@ -350,29 +350,29 @@
 
 <!-- Scripts
 ================================================== -->
-<script type="text/javascript" src="scripts/jquery-2.2.0.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="scripts/owl.carousel.min.js"></script>
-<script type="text/javascript" src="scripts/counterup.min.js"></script>
-<script type="text/javascript" src="scripts/waypoints.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.themepunch.tools.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.themepunch.revolution.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.isotope.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.magnific-popup.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.sticky-kit.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.twentytwenty.js"></script>
-<script type="text/javascript" src="scripts/jquery.event.move.js"></script>
-<script type="text/javascript" src="scripts/jquery.photogrid.js"></script>
-<script type="text/javascript" src="scripts/jquery.tooltips.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.pricefilter.js"></script>
-<script type="text/javascript" src="scripts/jquery.stacktable.js"></script>
-<script type="text/javascript" src="scripts/jquery.contact-form.js"></script>
-<script type="text/javascript" src="scripts/jquery.jpanelmenu.js"></script>
-<script type="text/javascript" src="scripts/headroom.min.js"></script>
-<script type="text/javascript" src="scripts/modernizr.custom.js"></script>
-<script type="text/javascript" src="scripts/puregrid.js"></script>
-<script type="text/javascript" src="scripts/flexibility.js"></script>
-<script type="text/javascript" src="scripts/custom.js"></script>
+<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/owl.carousel.min.js"></script>
+<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/counterup.min.js"></script>
+<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/waypoints.min.js"></script>
+<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.sticky-kit.min.js"></script>
+<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.twentytwenty.js"></script>
+<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.event.move.js"></script>
+<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.photogrid.js"></script>
+<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.tooltips.min.js"></script>
+<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.pricefilter.js"></script>
+<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.stacktable.js"></script>
+<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.contact-form.js"></script>
+<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.jpanelmenu.js"></script>
+<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/headroom.min.js"></script>
+<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/modernizr.custom.js"></script>
+<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/puregrid.js"></script>
+<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/flexibility.js"></script>
+<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/custom.js"></script>
 <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
 
 <div class="ct-fixed-contact">

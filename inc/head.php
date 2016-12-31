@@ -15,8 +15,8 @@
 
 <!-- CSS
 ================================================== -->
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/colors/blue.css" id="colors">
+<link rel="stylesheet" href="<?php echo BASEDIR_FR ?>/css/style.css">
+<link rel="stylesheet" href="<?php echo BASEDIR_FR ?>/css/colors/blue.css" id="colors">
 
 <!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
