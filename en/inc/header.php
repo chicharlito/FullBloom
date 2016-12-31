@@ -36,7 +36,7 @@
 						<ul class="menu alt2" id="responsive">
 
 							<li class="dropdown">
-								<a href="?q=home" class="<?php echo $_home_class; ?>">ACCUEIL</a>
+								<a href="?q=home" class="<?php echo $_home_class; ?>">HOME</a>
 							</li>
 
 							<li>
@@ -44,7 +44,7 @@
 				            </li>
 
 							<li>
-								<a href="?q=paas" class="<?php echo $_paas_class; ?>">SERVICES CONNEXES</a>
+								<a href="?q=paas" class="<?php echo $_paas_class; ?>">RELATED SERVICES</a>
 							</li>
 
 							<li>

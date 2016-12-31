@@ -2,7 +2,7 @@
 <!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
 <head>
 	<title>FullBloom</title>
-	<?php include(BASEDIR_FR.'/inc/head.php');?>
+	<?php include(dirname(__DIR__).'/inc/head.php');?>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 <!-- Header
 ================================================== -->
 <?php
-	include(BASEDIR_FR.'/inc/header.php');
+	include(dirname(__DIR__).'/inc/header.php');
 ?>
 
 </div>
@@ -304,75 +304,13 @@
 
 <!-- Footer
 ================================================== -->
-<div class="margin-top-50"></div>
-
-<div id="footer">
-	<!-- Main -->
-	<div class="container">
-		<div class="row">
-			<div class="col-md-5 col-sm-6">
-				<h4>ACTUALITES</h4>
-				<p>Que vous soyez en quête d'infos utiles, de nouvelles relations ou simplement envie de sourire, suivez-nous ! (Sauf dans la rue)</p>
-				<a href="https://www.linkedin.com/company/fullbloom" class="button social-btn"><i class="fa fa-linkedin"></i> Retrouvez-nous sur Linkdedin</a>
-			</div>
-
-			<div class="col-md-4  col-sm-6">
-				<h4>Liens Utiles</h4>
-				<ul class="footer-links">
-					<li><a href="index.html">Accueil</a></li>
-					<li><a href="paas.html">Services Connexes</a></li>
-					<li><a href="services.html">Solution</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					<li><a href="#">Mentions légales</a></li>
-				</ul>
-			</div>		
-
-			<div class="col-md-3  col-sm-12">
-				<a class="twitter-timeline" data-height="300" href="https://twitter.com/adeliusgroup">Tweets by adeliusgroup</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-			</div>
-
-		</div>
-		
-		<!-- Copyright -->
-		<div class="row">
-			<div class="col-md-12">
-				<div class="copyrights">©  Tous droits réservés, <a href="#"> Adelius,</a> 2016.</div>
-			</div>
-		</div>
-
-	</div>
-
-</div>
-
-<!-- Back To Top Button -->
-<div id="backtotop"><a href="#"></a></div>
+<?php include(dirname(__DIR__).'/inc/footer.php'); ?>
 
 
 <!-- Scripts
 ================================================== -->
-<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery-2.2.0.min.js"></script>
-<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/owl.carousel.min.js"></script>
-<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/counterup.min.js"></script>
-<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/waypoints.min.js"></script>
-<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.themepunch.tools.min.js"></script>
-<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.themepunch.revolution.min.js"></script>
-<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.isotope.min.js"></script>
-<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.magnific-popup.min.js"></script>
-<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.sticky-kit.min.js"></script>
-<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.twentytwenty.js"></script>
-<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.event.move.js"></script>
-<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.photogrid.js"></script>
-<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.tooltips.min.js"></script>
-<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.pricefilter.js"></script>
-<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.stacktable.js"></script>
-<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.contact-form.js"></script>
-<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/jquery.jpanelmenu.js"></script>
-<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/headroom.min.js"></script>
-<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/modernizr.custom.js"></script>
-<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/puregrid.js"></script>
-<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/flexibility.js"></script>
-<script type="text/javascript" src="<?php echo BASEDIR_FR; ?>/scripts/custom.js"></script>
+<?php include(dirname(__DIR__).'/inc/scripts.php'); ?>
+
 <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
 
 <div class="ct-fixed-contact">

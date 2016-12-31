@@ -2,7 +2,7 @@
 <!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
 <head>
 	<title>FullBloom</title>
-	<?php require_once 'inc/head.html';?>
+	<?php include('../inc/head.php');?>
 </head>
 
 <body>
@@ -21,9 +21,7 @@
 
 <div id="header-container" data-background="<?php echo BASEDIR_FR; ?>/images/service-02-parallax.jpg" data-color="#303133" data-color-opacity="0.4">
 	
-<?php
-	include('inc/header.php');
-?>
+<?php include(dirname(__DIR__).'/inc/header.php');?>
 
 </div>
 
@@ -83,7 +81,7 @@ Notre ambition est de nous développer très rapidement à l’internationale af
 			</div>
 	</div>
 
-	<div class="edge-bg" data-background-image="images/bloc_image_Equinix.jpg"></div>
+	<div class="edge-bg" data-background-image="<?php echo BASEDIR_FR; ?>/images/bloc_image_Equinix.jpg"></div>
 
 </div>
 <!-- Image Edge / End -->
@@ -113,7 +111,7 @@ Notre ambition est de nous développer très rapidement à l’internationale af
 			</div>
 	</div>
 
-	<div class="edge-bg" data-background-image="images/image_nesti.jpg"></div>
+	<div class="edge-bg" data-background-image="<?php echo BASEDIR_FR; ?>/images/image_nesti.jpg"></div>
 
 </div>
     
@@ -144,7 +142,7 @@ Notre ambition est de nous développer très rapidement à l’internationale af
 			</div>
 	</div>
 
-	<div class="edge-bg" data-background-image="images/bloc_image_Adelius.jpg"></div>
+	<div class="edge-bg" data-background-image="<?php echo BASEDIR_FR; ?>/images/bloc_image_Adelius.jpg"></div>
 
 </div>
 <!-- Image Edge / End -->
@@ -161,7 +159,7 @@ Notre ambition est de nous développer très rapidement à l’internationale af
     
     
 <div class="schema1">
-	<img src="images/schema1.png" alt="Schéma FullBloom" />
+	<img src="<?php echo BASEDIR_FR; ?>/images/schema1.png" alt="Schéma FullBloom" />
 </div>
 
     
@@ -196,8 +194,8 @@ Notre ambition est de nous développer très rapidement à l’internationale af
 				<div class="presentation-img">
 					<!-- Before & After Slider -->
 					<div class="before-after">
-					  <img src="images/compare-before.png" alt="">
-					  <img src="images/compare-after.jpg" alt="">
+					  <img src="<?php echo BASEDIR_FR; ?>/images/compare-before.png" alt="">
+					  <img src="<?php echo BASEDIR_FR; ?>/images/compare-after.jpg" alt="">
 					</div>
 				</div>
 
@@ -211,83 +209,13 @@ Notre ambition est de nous développer très rapidement à l’internationale af
 
 <!-- Footer
 ================================================== -->
-<div class="margin-top-0"></div>
-
-<div id="footer">
-	<!-- Main -->
-	<div class="container">
-		<div class="row">
-			<div class="col-md-5 col-sm-6">
-				<h4>ACTUALITES</h4>
-				<p>Que vous soyez en quête d'infos utiles, de nouvelles relations ou simplement envie de sourire, suivez-nous ! (Sauf dans la rue)</p>
-				<a href="https://www.linkedin.com/company/fullbloom" class="button social-btn"><i class="fa fa-linkedin"></i> Retrouvez-nous sur Linkdedin</a>
-			</div>
-
-			<div class="col-md-4  col-sm-6">
-				<h4>Liens Utiles</h4>
-				<ul class="footer-links">
-					<li><a href="index.html">Accueil</a></li>
-					<li><a href="#">Service connexes</a></li>
-					<li><a href="services.html">Solution</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-
-				<ul class="footer-links">
-                    <li><a href="#">Mentions légales</a></li>
-				</ul>
-			</div>		
-
-			<div class="col-md-3  col-sm-12">
-				<h4>Contactez-Nous</h4>
-				<div class="text-widget">
-					<span>36 rue Marbeuf - 75008 Paris</span> <br>
-					Téléphone: <span>+33 (0) 1 78 42 35 17</span><br>
-                    Mail: <span>contact@fullbloom.io</span>
-				</div>
-			</div>
-
-		</div>
-		
-		<!-- Copyright -->
-		<div class="row">
-			<div class="col-md-12">
-				<div class="copyrights">©  Tous droits réservés, <a href="#"> Adelius,</a> 2016.</div>
-			</div>
-		</div>
-
-	</div>
-
-</div>
-
-<!-- Back To Top Button -->
-<div id="backtotop"><a href="#"></a></div>
+<?php include(dirname(__DIR__).'/inc/footer.php'); ?>
 
 
 <!-- Scripts
 ================================================== -->
-<script type="text/javascript" src="scripts/jquery-2.2.0.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="scripts/owl.carousel.min.js"></script>
-<script type="text/javascript" src="scripts/counterup.min.js"></script>
-<script type="text/javascript" src="scripts/waypoints.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.themepunch.tools.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.themepunch.revolution.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.isotope.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.magnific-popup.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.sticky-kit.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.twentytwenty.js"></script>
-<script type="text/javascript" src="scripts/jquery.event.move.js"></script>
-<script type="text/javascript" src="scripts/jquery.photogrid.js"></script>
-<script type="text/javascript" src="scripts/jquery.tooltips.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.pricefilter.js"></script>
-<script type="text/javascript" src="scripts/jquery.stacktable.js"></script>
-<script type="text/javascript" src="scripts/jquery.contact-form.js"></script>
-<script type="text/javascript" src="scripts/jquery.jpanelmenu.js"></script>
-<script type="text/javascript" src="scripts/headroom.min.js"></script>
-<script type="text/javascript" src="scripts/modernizr.custom.js"></script>
-<script type="text/javascript" src="scripts/puregrid.js"></script>
-<script type="text/javascript" src="scripts/flexibility.js"></script>
-<script type="text/javascript" src="scripts/custom.js"></script>
+
+<?php include('../inc/scripts.php'); ?>
 
 
 </div>

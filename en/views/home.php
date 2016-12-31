@@ -2,7 +2,7 @@
 <!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
 <head>
 	<title>FullBloom</title>
-	<?php include '../inc/head.php';?>
+	<?php include('../inc/head.php');?>
 </head>
 
 <body>
@@ -18,9 +18,7 @@
 
 <!-- Header
 ================================================== -->
-<?php
-	include(BASEDIR_FR.'/inc/header.php');
-?>
+<?php include(dirname(__DIR__).'/inc/header.php');?>
 
 </div>
 
@@ -28,14 +26,14 @@
 <!-- Video Background -->
 <div class="fullscreen video background" data-color="#000000" data-color-opacity="0.3">
 
-	<video poster="images/fibre-image-slider-home.jpg" id="bgvid" loop autoplay muted>
+	<video poster="<?php echo BASEDIR_FR ?>/images/fibre-image-slider-home.jpg" id="bgvid" loop autoplay muted>
 		<source src="" type="">
 		<source src="" type="">
 	</video>
 
     <div class="parallax-content-container">
         <div class="parallax-content">
-        	<h2>FullBloom<br>Votre Plateform As A Service pour déployer vos applications en un éclair</h2>
+        	<h2>FullBloom<br>Your Plateform As A Service to deploy your applications in a flash</h2>
            	<div class="scroll-to-content ln ln-icon-Down-3"></div>
         </div>
     </div>
@@ -227,7 +225,7 @@
 			<!-- Item -->
 			<div class="item">
 				<a>
-					<img src="images/equi.jpg" alt="">
+					<img src="<?php echo BASEDIR_FR ?>/images/equi.jpg" alt="">
 					<div class="overlay">
 						<div class="overlay-content">
 							<h4>EQUINIX</h4>
@@ -240,7 +238,7 @@
 			<!-- Item -->
 			<div class="item">
 				<a>
-					<img src="images/nesti.jpg" alt="">
+					<img src="<?php echo BASEDIR_FR ?>/images/nesti.jpg" alt="">
 					<div class="overlay">
 						<div class="overlay-content">
 							<h4>NESTINCLOUD</h4>
@@ -254,7 +252,7 @@
 			<!-- Item -->
 			<div class="item">
 				<a>
-					<img src="images/ade.jpg" alt="">
+					<img src="<?php echo BASEDIR_FR ?>/images/ade.jpg" alt="">
 					<div class="overlay">
 						<div class="overlay-content">
 							<h4>ADELIUS Managed Services</h4>
@@ -288,13 +286,13 @@
 			
 			<!-- Carousel -->
 			<div class="logo-carousel-alt">
-			    <div class="item"><img src="images/php.png" alt="" /></div>
-			    <div class="item"><img src="images/nodeJS.png" alt="" /></div>
-			    <div class="item"><img src="images/play.png" alt="" /></div>
-                <div class="item"><img src="images/scala.png" alt="" /></div>
-			    <div class="item"><img src="images/MySQL.png" alt="" /></div>
-			    <div class="item"><img src="images/Tomcat.png" alt="" /></div>
-                <div class="item"><a href="contact.html"><img src="images/no.png" alt="" /></a></div>
+			    <div class="item"><img src="<?php echo BASEDIR_FR ?>/images/php.png" alt="" /></div>
+			    <div class="item"><img src="<?php echo BASEDIR_FR ?>/images/nodeJS.png" alt="" /></div>
+			    <div class="item"><img src="<?php echo BASEDIR_FR ?>/images/play.png" alt="" /></div>
+                <div class="item"><img src="<?php echo BASEDIR_FR ?>/images/scala.png" alt="" /></div>
+			    <div class="item"><img src="<?php echo BASEDIR_FR ?>/images/MySQL.png" alt="" /></div>
+			    <div class="item"><img src="<?php echo BASEDIR_FR ?>/images/Tomcat.png" alt="" /></div>
+                <div class="item"><a href="contact.html"><img src="<?php echo BASEDIR_FR ?>/images/no.png" alt="" /></a></div>
 			</div>
 
 		</div>
@@ -304,75 +302,12 @@
 
 <!-- Footer
 ================================================== -->
-<div class="margin-top-50"></div>
-
-<div id="footer">
-	<!-- Main -->
-	<div class="container">
-		<div class="row">
-			<div class="col-md-5 col-sm-6">
-				<h4>ACTUALITES</h4>
-				<p>Que vous soyez en quête d'infos utiles, de nouvelles relations ou simplement envie de sourire, suivez-nous ! (Sauf dans la rue)</p>
-				<a href="https://www.linkedin.com/company/fullbloom" class="button social-btn"><i class="fa fa-linkedin"></i> Retrouvez-nous sur Linkdedin</a>
-			</div>
-
-			<div class="col-md-4  col-sm-6">
-				<h4>Liens Utiles</h4>
-				<ul class="footer-links">
-					<li><a href="index.html">Accueil</a></li>
-					<li><a href="paas.html">Services Connexes</a></li>
-					<li><a href="services.html">Solution</a></li>
-					<li><a href="contact.html">Contact</a></li>
-					<li><a href="#">Mentions légales</a></li>
-				</ul>
-			</div>		
-
-			<div class="col-md-3  col-sm-12">
-				<a class="twitter-timeline" data-height="300" href="https://twitter.com/adeliusgroup">Tweets by adeliusgroup</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-			</div>
-
-		</div>
-		
-		<!-- Copyright -->
-		<div class="row">
-			<div class="col-md-12">
-				<div class="copyrights">©  Tous droits réservés, <a href="#"> Adelius,</a> 2016.</div>
-			</div>
-		</div>
-
-	</div>
-
-</div>
-
-<!-- Back To Top Button -->
-<div id="backtotop"><a href="#"></a></div>
+<?php include(dirname(__DIR__).'/inc/footer.php'); ?>
 
 
 <!-- Scripts
 ================================================== -->
-<script type="text/javascript" src="scripts/jquery-2.2.0.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="scripts/owl.carousel.min.js"></script>
-<script type="text/javascript" src="scripts/counterup.min.js"></script>
-<script type="text/javascript" src="scripts/waypoints.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.themepunch.tools.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.themepunch.revolution.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.isotope.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.magnific-popup.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.sticky-kit.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.twentytwenty.js"></script>
-<script type="text/javascript" src="scripts/jquery.event.move.js"></script>
-<script type="text/javascript" src="scripts/jquery.photogrid.js"></script>
-<script type="text/javascript" src="scripts/jquery.tooltips.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.pricefilter.js"></script>
-<script type="text/javascript" src="scripts/jquery.stacktable.js"></script>
-<script type="text/javascript" src="scripts/jquery.contact-form.js"></script>
-<script type="text/javascript" src="scripts/jquery.jpanelmenu.js"></script>
-<script type="text/javascript" src="scripts/headroom.min.js"></script>
-<script type="text/javascript" src="scripts/modernizr.custom.js"></script>
-<script type="text/javascript" src="scripts/puregrid.js"></script>
-<script type="text/javascript" src="scripts/flexibility.js"></script>
-<script type="text/javascript" src="scripts/custom.js"></script>
+<?php include('../inc/scripts.php'); ?>
 <script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
 
 <div class="ct-fixed-contact">
